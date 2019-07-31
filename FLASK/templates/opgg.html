@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<form class="btn-primary" action="/search">
+  <img src="https://attach.s.op.gg/logo/20190730135214.bb87673d92d8dff6a5de5c104187e4b4.png" class="rounded mx-auto d-block" alt="...">
+  <div class="form-group d-inline">
+    <!-- <img src="https://attach.s.op.gg/logo/20190730135214.bb87673d92d8dff6a5de5c104187e4b4.png" class="img-fluid" alt="Responsive image"> -->
+    <input type="text" class="form-control col-10 d-inline" id="summoner" name="summoner">
+  </div>
+  
+  
+  <button type="submit" class="d-inline btn btn-primary">Submit</button>
+</form>
+{% endblock %}

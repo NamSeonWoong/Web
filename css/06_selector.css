@@ -1,0 +1,39 @@
+ /* *  {
+    color: red; 
+ } */
+
+ /* important는 최우선 순위!!  */
+h1 {
+    color: red !important;
+}
+
+h1, h2 {
+    background-color: gray;
+}
+
+.class-selector {
+    color: blue;
+}
+
+#id-selector {
+    color: green;
+}
+
+/* 셀렉터들은 우선순위가 있음
+id > class > tag
+ */
+
+ /* 자식 셀렉터 */
+ ul > li {
+    color: pink;           
+ }
+
+
+ /* 바로 밑에만  */
+ /* p + li {
+     color: green; */
+
+/* p이하로  */
+ p ~ li {
+     color: blue;
+ }
