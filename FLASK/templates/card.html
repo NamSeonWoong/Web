@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block body %}
+ <h1>일제목록 카드형식입니다.</h1>
+ {% for product in products %}
+ <div class="card" style="width: 18rem;">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">제품명:{{product[0]}}</li>
+      <li class="list-group-item">대체상품:{{product[2]}}</li>
+      <li class="list-group-item">카테코리:{{product[1]}}</li>
+    </ul>
+  </div>
+  {% endfor %}
+{% endblock %}
